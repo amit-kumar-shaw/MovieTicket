@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="UserMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Cinemax</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/droid_sans_400-droid_sans_700.font.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+
+
+<!--[if lt IE 7]>
+<script type="text/javascript" src="js/ie_png.js"></script>
+<script type="text/javascript">ie_png.fix('.png, .link1 span, .link1');</script>
+<link href="css/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body id="page1">
+<form id="form1" runat="server">
+<!-- START PAGE SOURCE -->
+<div class="tail-top">
+  <div class="tail-bottom">
+    <div id="main">
+      <div id="header">
+        <div class="row-1">
+          <div class="fleft">
+              <asp:Image ID="Image1" runat="server" ImageAlign="Baseline" 
+                  ImageUrl="~/images/2000px-Cinemax.svg.png" Width="200px" />
+            </div>
+          <ul>
+            <li><a href="Homepage.aspx"><img src="images/icon1-act.gif" alt="" /></a></li><asp:HyperLink 
+                    ID="hplprofile" runat="server" NavigateUrl="~/UserProfile.aspx">HyperLink</asp:HyperLink>
+                <asp:ImageButton ID="btnlogin" runat="server" Height="54px" 
+                  ImageUrl="~/images/userlogin.png" onclick="btnlogin_Click" Width="62px" 
+                    ValidationGroup="Submit" />
+                <asp:ImageButton ID="btnlogout" runat="server" Height="50px" 
+                  ImageUrl="~/images/userlogout.png" onclick="btnlogout_Click" Width="55px" 
+                    ValidationGroup="Submit" />
+          </ul>
+        </div>
+        <div class="row-2">
+          <ul>
+            <li><a href="Homepage.aspx">Home</a></li>
+            <li><a href="Movies.aspx">Movies</a></li>
+            <li><a href="AboutUs.aspx">About Us</a></li>
+            <li><a href="Developers.aspx">Developers</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div>
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+    </div>
+    </form>
+</body>
+<div id="footer">
+        <div class="left">
+          <div class="right">
+            <div class="footerlink">
+              <p class="lf">Copyright &copy; 2015 <a href="Homepage.aspx">Cinemax</a> - All Rights Reserved</p>
+              <p class="rf">Design by <a href="Developers.aspx">Developers</a></p>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">    Cufon.now(); </script>
+<!-- END PAGE SOURCE -->
+</body>
+    </div>
+    
+    <p>
+        &nbsp;</p>
+</body>
+</html>
+</html>
